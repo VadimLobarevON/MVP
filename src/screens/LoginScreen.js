@@ -21,7 +21,7 @@ const LoginScreen = ({ navigation }) => {
           placeholder="Email"
           style={styles.input}
         />
-        
+
         <TextInput
           placeholder="Password"
           style={styles.input}
@@ -38,9 +38,9 @@ const LoginScreen = ({ navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={handleSignUp}
-          style={[styles.button, styles.buttonOutline]}
+          style={[styles.button, styles.buttonOutline,]}
         >
-          <Text style={styles.buttonOutlineText}>Registeration Page</Text>
+          <Text style={styles.buttonOutlineText}>Register</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     width: '80%'
   },
   input: {
-    backgroundColor: '#5D697A',
+    backgroundColor: '#fff',
     paddingHorizontal: 15,
     paddingVertical: 10,
     borderRadius: 10,
@@ -80,10 +80,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonOutline: {
-    backgroundColor: '#5D697A',
+    backgroundColor: '#fff',
     marginTop: 5,
     borderColor: '#F2D639',
-    borderWidth: 2,
+    borderWidth: 3,
   },
   buttonText: {
     color: '#383838',
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   buttonOutlineText: {
-    color: '#F2D639',
+    color: '#5D697A',
     fontWeight: '700',
     fontSize: 16,
   },

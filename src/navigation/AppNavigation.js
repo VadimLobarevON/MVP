@@ -13,7 +13,6 @@ const AppNavigation = ({ initialRoute }) => {
             <Stack.Navigator initialRouteName={initialRoute}>
                 <Stack.Screen name="Login" component={LoginScreen} />
                 <Stack.Screen name="Register" component={RegisterScreen} />
-
                 <Stack.Screen name="Home" component={HomeNavigation} />
             </Stack.Navigator>
         </NavigationContainer>
